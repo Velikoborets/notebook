@@ -26,6 +26,10 @@ phpunit.phar
 tests/_output/*
 tests/_support/_generated
 
+# mysql docker files
+tmp
+
 #vagrant folder
 /.vagrant
 /tmp/db/mysql.sock
+/tmp/

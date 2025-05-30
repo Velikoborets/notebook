@@ -1,0 +1,19 @@
+{
+    "name": "velikoborets/notebook",
+    "description": "notebook - simple and clear study blog.",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/",
+            "Core\\": "core/"
+        }
+    },
+    "authors": [
+        {
+            "name": "A.Velikoborets"
+        }
+    ],
+    "require": {
+        "ext-json": "*",
+        "ext-pdo": "*"
+    }
+}
