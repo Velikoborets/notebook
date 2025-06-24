@@ -2,15 +2,14 @@
 
 namespace Core;
 
-use Core\Track;
 use Exception;
 
 class RouteHandler
 {
     /**
-     * Get a matching url with an existing route
+     * Get a matching url with an existing routes
      *
-     * @throws Exception
+     * @throws Exception when no matches
      */
     public static function getMatchUrl($routes, $currentUrl): ?Track
     {
@@ -22,6 +21,11 @@ class RouteHandler
         throw new Exception("There are no routers matching the URL");
     }
 
+    /**
+     * Check the current route for a match
+     *
+     * @return Track containing a controller and an action for a valid router
+     */
     private static function checkRoutes($routes, $currentUrl): ?Track
     {
         $validRoute = '';
