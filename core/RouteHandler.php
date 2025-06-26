@@ -24,7 +24,7 @@ class RouteHandler
     /**
      * Check the current route for a match
      *
-     * @return Track containing a controller and an action for a valid router
+     * @return Track object containing a controller and an action for a valid router
      */
     private static function checkRoutes($routes, $currentUrl): ?Track
     {
